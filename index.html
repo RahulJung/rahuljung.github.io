@@ -22,8 +22,59 @@
     />
 
     <link rel="stylesheet" type="text/css" href="default.css" />
-    <link rel="stylesheet" type="text/css" href="fontawesome-all.min.css" />
     <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <style>
+      .arrow {
+        border: solid #9580ff;
+        /* #9580ff
+        #64ffda */
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        margin-bottom: 4px;
+        margin-right: 5px;
+        padding: 2.5px;
+      }
+
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+    </style>
+    <style>
+      a:link {
+        color: #9580ff;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #9580ff;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #64ffda;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:active {
+        color: #64ffda;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <section class="s1">
@@ -50,18 +101,18 @@
 
             <ul id="navigation">
               <li><a href="index.html#rcabout_me">About</a></li>
-              <li><a href="index.html#experience">Experience</a></li>
-              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#work">Projects</a></li>
               <li><a href="index.html#contact">Contact</a></li>
+              <!-- <li><a href="index.html#experience">Experience</a></li> -->
+              <li class="resume-button">
+                <a href="RahulChauhan.pdf" style="color: #9580ff">Resume</a>
+              </li>
             </ul>
           </div>
 
           <div class="left-column">
             <!-- <div id="preview-shadow"> -->
-            <img
-              id="profile_pic"
-              src="/home/rahul/Documents/github/portfolio/IMG_1345 (1).JPG"
-            />
+            <img id="profile_pic" src="IMG_1345 (1).JPG" />
 
             <!-- <h5 style="text-align: center; line-height: 0">
               Personalize Theme
@@ -108,9 +159,12 @@
             <div id="corner-tr" class="corner"></div> -->
             <h3>About Me</h3>
             <p>
-              Hello! I am an undergraduate senior at University of Houston
-              majoring in Computer Science. I enjoy building Full Stack Web
-              Application or anything that lives on the internet.
+              Hello! I am an Undergraduate Senior at
+              <a href="https://www.uh.edu/">University of Houston</a>
+              majoring in Computer Science. I am originally from Kathmandu,
+              Nepal but now I'm living in Austin, Texas. I enjoy building Full
+              Stack Web Application or anything that lives on the internet. My
+              pronouns are he/him.
             </p>
             <!-- <div id="corner-br" class="corner"></div>
             <div id="corner-bl" class="corner"></div> -->
@@ -126,17 +180,11 @@
         <div class="about-wrapper">
           <div class="about-me">
             <a name="experience"></a>
-            <h4>Where I have worked</h4>
+            <h4>My Work Experience</h4>
 
-            <p>
-              I build new projects just to tickle my brain and love teaching
-              others how they're made.
-            </p>
+            <p>Student Ambassador</p>
 
-            <p>
-              While I keep busy teaching courses, I still take interviews in
-              search of a great team & projects that interest me.
-            </p>
+            <p>Math Tutor</p>
 
             <!-- <hr /> -->
           </div>
@@ -149,20 +197,41 @@
             </p>
 
             <div id="skills">
-              <ul>
-                <li style="padding-bottom: 5px">JavaScript</li>
-                <li style="padding-bottom: 5px">ReactJS</li>
-                <li style="padding-bottom: 5px">NodeJS</li>
-                <li style="padding-bottom: 5px">MongoDB</li>
-                <li style="padding-bottom: 5px">MySQL</li>
+              <ul style="text-align: left">
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>JavaScript
+                </li>
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>ReactJS
+                </li>
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>NodeJS
+                </li>
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>MongoDB
+                </li>
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>MySQL
+                </li>
               </ul>
 
-              <ul>
-                <li style="padding-bottom: 5px">Google Maps API</li>
-                <li style="padding-bottom: 5px">JS Charts</li>
-                <li style="padding-bottom: 5px">HTML/CSS</li>
-                <li style="padding-bottom: 5px">Postgres</li>
-                <li style="padding-bottom: 5px">AWS EC2</li>
+              <ul style="text-align: left">
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>Google Maps API
+                </li>
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>JS Charts
+                </li>
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>HTML/CSS
+                </li>
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>Postgres
+                </li>
+
+                <li style="padding-bottom: 5px">
+                  <i class="arrow right"></i>AWS EC2
+                </li>
               </ul>
             </div>
           </div>
@@ -178,45 +247,55 @@
         <div class="post-wrapper">
           <div>
             <div class="post">
-              <img class="thumbnail" src="images/dash.jpg" />
+              <img class="thumbnail" src="8.gif" />
               <div class="post-preview">
-                <h6 class="post-title">Laboratory Management System</h6>
+                <h6 class="post-title">Yummy</h6>
+                <hr />
                 <p class="post-intro">
-                  Designed built & mantained a the lab managment system for FOI
-                  Laboratories
+                  An online directory that allows users to search for local
+                  restaurants, bars, and cafes.
                 </p>
-                <a href="post.html">Read More</a>
+                <a href="post.html" class="read-button">Read More</a>
               </div>
             </div>
           </div>
 
           <div>
             <div class="post">
-              <img
-                class="thumbnail"
-                src="/home/rahul/Documents/github/portfolio/8.gif"
-              />
+              <a href="http://13.58.224.206/">
+                <img class="thumbnail" src="B1.gif" />
+              </a>
               <div class="post-preview">
-                <h6 class="post-title">Online Store - CoursePost Title</h6>
+                <a href="http://13.58.224.206/">
+                  <h6 class="post-title">Retail Chain</h6>
+                </a>
+                <hr />
                 <p class="post-intro">
-                  Online store with paypal payments intergration and guest user
-                  shopping
+                  Retail Clone is a Full-Stack E-commerce Web Application to
+                  implement Item Detail Page with focus on design and
+                  functationality.
                 </p>
-                <a href="post.html">Read More</a>
+                <a href="post.html" class="read-button">Read More</a>
               </div>
             </div>
           </div>
 
           <div>
             <div class="post">
-              <img class="thumbnail" src="images/membership site.jpg" />
+              <a href="https://mygamestocks.com/">
+                <img class="thumbnail" src="Demo1.gif" />
+              </a>
               <div class="post-preview">
-                <h6 class="post-title">Membership Website</h6>
+                <h6 class="post-title">Game Stock</h6>
+                <hr />
                 <p class="post-intro">
-                  Modulized guide for online courses with step by step
-                  intructions
+                  MyGamestocks is Web Application for video game collectors,
+                  enthusiasts or anyone who wants to track their video game
+                  collection. With MyGamestock, users can add to their
+                  collections, track the value of their collections, and see how
+                  the value of their collection stacks up to other users.
                 </p>
-                <a href="post.html">Read More</a>
+                <a href="post.html" class="read-button">Read More</a>
               </div>
             </div>
           </div>
@@ -230,9 +309,17 @@
         <!-- <a href=""></a> -->
         <h3 style="text-align: center">Get In Touch</h3>
         <p style="text-align: center">
-          I am currently looking for opportunities and my inbox is always open.
-          You can also also message me on LinkedIn! Also feel free to contact me
-          for any project ot collaboration.
+          I am currently looking for new opportunities and my inbox is always
+          open. You can also also message me on LinkedIn! Also feel free to
+          contact me for any project or collaboration.
+        </p>
+        <p style="margin: auto" style="text-align: center" class="hello-button">
+          <a
+            href="mailto:rahuljungchauhan@gmail.com"
+            style="text-align: center"
+          >
+            Say Hello!</a
+          >
         </p>
         <div id="theme-options-wrapper">
           <ul class="icons">
