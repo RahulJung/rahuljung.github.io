@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --mainColor: #eaeaea;
   --secondaryColor: #fff;
 
@@ -13,6 +13,22 @@
   --previewShadow: #f0ead6;
 
   --buttonColor: black;
+} */
+:root {
+  --mainColor: #15202b;
+  --secondaryColor: #192734;
+
+  --borderColor: #164d56;
+
+  --mainText: #fff;
+  --secondaryText: #eeeeee;
+
+  --themeDotBorder: #fff;
+
+  --previewBg: rgb(25, 39, 52, 0.8);
+  --previewShadow: #111921;
+
+  --buttonColor: #17a2b8;
 }
 
 html,
@@ -379,7 +395,7 @@ h6 {
 .resume-button:hover {
   border: 1px solid#64ffda;
   color: #64ffda;
-  background-color: var(--secondaryColor);
+  background-color: #64ffda;
   text-decoration: none;
 }
 #contact-form {
@@ -512,4 +528,23 @@ ul.icons.alt li .icon:before {
   /* color: #64ffda; */
   background-color: var(--secondaryColor);
   text-decoration: none;
+}
+
+.tech {
+  /* display: inline-block; */
+
+  display: flex;
+  color: #9580ff !important;
+  justify-content: left;
+  padding-left: 0;
+  /* align-items: center; */
+  font-size: 14px;
+}
+
+.rchead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rcicon {
 }

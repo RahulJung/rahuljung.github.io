@@ -1,4 +1,4 @@
-console.log("Its working");
+//console.log("Its working");
 
 let theme = localStorage.getItem("theme");
 
@@ -20,7 +20,7 @@ for (var i = 0; themeDots.length > i; i++) {
 
 function setTheme(mode) {
   if (mode == "light") {
-    document.getElementById("theme-style").href = "default.css";
+    document.getElementById("theme-style").href = "white.css";
   }
 
   if (mode == "blue") {
